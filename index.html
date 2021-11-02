@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma project</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <div class="grid">
+        <header>
+            <div class="navOne"></div>
+            <div class="navTwo">
+                <a href="">Главная</a>
+                <a href="">Галерея</a>
+                <a href="">Проекты</a>
+                <a href="">Сертификаты</a>
+                <a href="">Контакты</a>
+            </div>
+        </header>
+        <section class="sectOne">
+            <div class="sectD2">
+                <p class="sectP1">PROJECT</p>
+                <p class="sectP2">HOME</p>
+                <div class="sectP3">
+                    <div class="span1SP3"></div>
+                    <div class="span2SP3"></div>
+                </div>
+                <div class="sectP4"></div>
+            </div>
+            <div class="sectD1">
+                <div class="fractD"></div>
+            </div>
+        </section>
+        <section class="sectTwo">
+            <div class="sectTwoD1"></div>
+            <div class="sectTwoD2"></div>
+            <div class="sectTwoD3"></div>
+            <div class="sectTwoD4">
+                <p class="par1SectTwoD4">О компании</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eum sapiente, fuga quibusdam aut et laudantium voluptatibus consectetur molestiae dolores consequuntur in dicta, aliquam impedit nisi laboriosam libero quam illum.
+                    Delectus optio hic velit officia deserunt, odio, deleniti laboriosam voluptatem sit amet quo, cum possimus illo. Dicta ea minima, debitis libero suscipit recusandae iste molestias distinctio soluta illum. Ex, debitis. Culpa, doloribus
+                    exercitationem eveniet voluptate doloremque quos distinctio obcaecati sapiente architecto dolores et laborum id quia! Officia qui a, odit non illo beatae tempora possimus sit eligendi fugit impedit unde.</p>
+                <div class="par3SectTwoD4"></div>
+            </div>
+        </section>
+        <section class="sectThree">
+            <div class="sect1ThreeD">Основные задачи</div>
+            <div class="sect2ThreeD">1</div>
+            <div class="sect3ThreeD">Создание комфортных условий и повышение качества обслуживания клиентов</div>
+            <div class="sect4ThreeD">2</div>
+            <div class="sect5ThreeD">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</div>
+        </section>
+        <section class="sectFour">
+            <div class="sect1Four">Наши проекты</div>
+            <div class="sect2Four">
+                <span>ДОСУГОВЫЙ ЦЕНТР</span>
+                <div></div>
+            </div>
+            <div class="sect3Four"></div>
+            <div class="sect4Four"></div>
+            <div class="sect5Four"></div>
+            <div class="sect6Four"></div>
+            <div class="sect7Four"></div>
+        </section>
+        <section class="sectFive">
+            <div class="sect1Five">Связаться с нами</div>
+            <div class="sect2Five">
+                <form action="" method="post">
+                    <input id="name" class="inputForm" type="text" placeholder="Имя">
+                    <input id="phone" type="text" placeholder="Номер телефона*">
+                    <input id="mail" type="text" placeholder="E-mail*">
+                    <input id="product" type="text" placeholder="Интересующий товар/услуга">
+                    <textarea itemid="message" name="" id="" cols="30" rows="10" placeholder="Сообщение*"></textarea>
+                </form>
+            </div>
+            <div class="sect3Five">
+                <input id="check" type="checkbox">
+                <label for="check">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</label>
+            </div>
+            <div class="sect4Five"></div>
+            <div class="map" id="mapLefleat"></div>
+        </section>
+        <footer>
+            <div class="footer1"></div>
+            <div class="footer2">
+                <p>Информация</p>
+                <div>
+                    <a href="">Главная</a>
+                    <a href="">Галерея</a>
+                    <a href="">Проекты</a>
+                    <a href="">Сертификаты</a>
+                    <a href="">Контакты</a>
+                </div>
+            </div>
+            <div class="footer3">
+                <p>Контакты</p>
+                <div>
+                    <p class="footer3_1">
+                        <span>
+                            100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10
+                        </span>
+                    </p>
+                    <p class="footer3_2">
+                        <span>
+                            +38 (000) 000 00 00
+                        </span>
+                    </p>
+                    <p class="footer3_3">
+                        <span>
+                            mail@gmail.com
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer4">
+                <p>Социальные сети</p>
+                <div class="foot4">
+                    <div class="sign1"></div>
+                    <div class="sign2"></div>
+                    <div class="sign3"></div>
+                    <div class="sign4"></div>
+                </div>
+            </div>
+            <p>© 2021 Digital Project by SergKredo. Все права защищены.</p>
+        </footer>
+    </div>
+    <script>
+        window.onload = function() {
+            //Карта при помощи Leaflet API с конкретным местом положения
+            let center = [50.4491366139749, 30.6026990232902];
+
+            // Создаём карту
+            let map = L.map('mapLefleat').setView(center, 30);
+
+            // Настраиваем OSM
+            L.tileLayer(
+                'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 16
+                }).addTo(map);
+
+            // добавляем маркер в указанном месте
+            L.marker(center).addTo(map);
+        };
+    </script>
+
+</body>
+
+</html>

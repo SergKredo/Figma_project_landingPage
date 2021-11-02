@@ -1,0 +1,570 @@
+$width: 100%;
+$height: 4052px;
+$margin: 9.375%;
+$col: 12;
+@import 'mixin';
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('/font/TTHoves-DemiBold.eot');
+    src: local('/font/TT Hoves DemiBold'), local('/font/TTHoves-DemiBold'), url('/font/TTHoves-DemiBold.eot?#iefix') format('embedded-opentype'), url('/font/TTHoves-DemiBold.woff2') format('woff2'), url('/font/TTHoves-DemiBold.woff') format('woff'), url('/font/TTHoves-DemiBold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('/font/SFPro/SFProDisplay-Heavy.eot');
+    src: local('/font/SFPro/SF Pro Display Heavy'), local('/font/SFPro/SFProDisplay-Heavy'), url('/font/SFPro/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'), url('/font/SFPro/SFProDisplay-Heavy.woff2') format('woff2'), url('/font/SFPro/SFProDisplay-Heavy.woff') format('woff'), url('/font/SFPro/SFProDisplay-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('opensanslight.woff2') format('woff2'), url('opensanslight.woff') format('woff'), url('opensanslight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 0.025*$height 0.204*$height 0.144*$height 0.103*$height 0.218*$height 0.179*$height 0.127*$height;
+    grid-template-areas: "header" "sectOne" "sectTwo" "sectThree" "sectFour" "sectFive" "footer";
+    header {
+        grid-area: header;
+        @include grid($col);
+        .navOne {
+            grid-column: 1/2;
+            background: no-repeat center/100% url(/image/header/Group11.png);
+        }
+        .navTwo {
+            grid-column: 5/12;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a {
+                font-family: TT Hoves;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 12px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: #333333;
+                text-decoration: none;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                &:nth-child(1) {
+                    border-top: 1px solid #333333;
+                    border-bottom: 1px solid #333333;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+                &:nth-child(1):hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .sectOne {
+        grid-area: sectOne;
+        @include grid($col);
+        .sectD2 {
+            grid-column: 1/5;
+            display: grid;
+            grid-template-rows: repeat(10, 1fr);
+            justify-content: start;
+            align-items: stretch;
+            justify-items: start;
+            .sectP1 {
+                grid-row: 5/6;
+                font-family: 'TT Hoves';
+                font-style: normal;
+                font-weight: 100;
+                font-size: 54px;
+                margin: 0px;
+                color: #BDBDBD;
+                align-self: end;
+            }
+            .sectP2 {
+                grid-row: 6/7;
+                font-family: 'TT Hoves';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 54px;
+                margin: 0px;
+                color: #333333;
+            }
+            .sectP3 {
+                grid-row: 8/9;
+                grid-column: 1/2;
+                .span1SP3 {
+                    background: space url(/image/section1/Rectangle7.png);
+                    width: 53px;
+                    height: 53px;
+                    display: inline-block;
+                    &:hover {
+                        border: 1px solid rgb(228, 228, 228);
+                    }
+                }
+                .span2SP3 {
+                    background: no-repeat center/100% url(/image/section1/Group10.png);
+                    width: 53px;
+                    height: 53px;
+                    margin-left: 10px;
+                    display: inline-block;
+                    &:hover {
+                        border: 1px solid rgb(228, 228, 228);
+                    }
+                }
+            }
+            .sectP4 {
+                grid-row: 9/10;
+                grid-column: 1/2;
+                background: no-repeat center/100% url(/image/section1/slide-numbers.png);
+                width: 142px;
+                height: 31px;
+                align-self: end;
+            }
+        }
+        .sectD1 {
+            grid-column: 5/13;
+            background: space url(/image/section1/Rectangle6.png);
+            background-size: cover;
+            .fractD {
+                position: relative;
+                background: space url(/image/section1/Frame10.png);
+                top: -71+0.204*$height;
+                left: -1px;
+                width: 222px;
+                height: 71px;
+                &:hover {
+                    border: 0.1px solid gray;
+                }
+            }
+        }
+    }
+    .sectTwo {
+        background: no-repeat center/100% url(/image/section2/Rectangle7.png);
+        grid-area: sectTwo;
+        @include grid($col);
+        grid-template-rows: repeat(10, 1fr);
+        .sectTwoD1 {
+            grid-column: 1/5;
+            grid-row: 2/7;
+            background: space url(/image/section2/Rectangle8.png);
+            margin-left: 15%;
+        }
+        .sectTwoD2 {
+            grid-column: 1/5;
+            grid-row: 8/11;
+            background: space url(/image/section2/Rectangle10.png);
+            margin-left: 15%;
+            margin-top: -10%;
+        }
+        .sectTwoD3 {
+            grid-column: 4/8;
+            grid-row: 2/12;
+            background: space url(/image/section2/Rectangle9.png);
+            margin-left: 25%;
+            margin-top: 15%;
+        }
+        .sectTwoD4 {
+            grid-column: 7/12;
+            grid-row: 2/10;
+            margin-left: 25%;
+            .par1SectTwoD4 {
+                grid-row: 2/5;
+                font-family: 'TT Hoves';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 54px;
+                line-height: 64px;
+                margin: 0px;
+                color: #BDBDBD;
+            }
+            .par3SectTwoD4 {
+                grid-column: 3/7;
+                grid-row: 8/9;
+                background: space url(/image/section2/Frame11.png);
+                margin: 0px;
+                padding: 0px;
+                height: 71px;
+                width: 222px;
+                &:hover {
+                    border: 0.1px solid gray;
+                }
+            }
+        }
+    }
+    .sectThree {
+        grid-area: sectThree;
+        @include grid($col);
+        grid-template-rows: repeat(10, 1fr);
+        .sect1ThreeD {
+            grid-column: 1/7;
+            grid-row: 1/3;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 54px;
+            color: #BDBDBD;
+            margin-top: 10%;
+        }
+        .sect2ThreeD {
+            grid-column: 1/2;
+            grid-row: 4/11;
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 200px;
+            line-height: 239px;
+            display: flex;
+            align-items: center;
+            color: #F2F2F2;
+        }
+        .sect3ThreeD {
+            grid-column: 1/6;
+            grid-row: 6/9;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 36px;
+            color: #333333;
+            margin-left: 30%;
+            margin-right: 10%;
+            margin-bottom: 30%;
+        }
+        .sect4ThreeD {
+            grid-column: 6/12;
+            grid-row: 4/11;
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 200px;
+            line-height: 239px;
+            display: flex;
+            align-items: center;
+            color: #F2F2F2;
+        }
+        .sect5ThreeD {
+            grid-column: 6/13;
+            grid-row: 6/9;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 36px;
+            color: #333333;
+            margin-left: 25%;
+        }
+    }
+    .sectFour {
+        grid-area: sectFour;
+        @include grid($col);
+        grid-template-rows: 1fr 2fr 2fr 0.55fr;
+        .sect1Four {
+            grid-column: 1/13;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 64px;
+            line-height: 64px;
+            color: #BDBDBD;
+        }
+        .sect2Four {
+            grid-column: 1/7;
+            grid-row: 2;
+            background: space url(/image/section4/Rectangle17.png), space url(/image/section4/Rectangle12.png);
+            display: grid;
+            span {
+                grid-column: 2/5;
+                font-family: TT Hoves;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 54px;
+                line-height: 54px;
+                color: #FFFFFF;
+                margin-left: 18%;
+                margin-right: 5%;
+                margin-top: 10%;
+                text-align: start;
+            }
+            div {
+                grid-column: 2/5;
+                margin-left: 18%;
+                margin-right: 5%;
+                margin-top: -10%;
+                background: no-repeat url(/image/section4/Group12.png);
+                &:hover {
+                    border: 0.1px solid gray;
+                }
+                height: 24px;
+                width: 129px;
+            }
+        }
+        .sect3Four {
+            grid-column: 7/13;
+            grid-row: 2;
+            background: space url(/image/section4/image15.png);
+        }
+        .sect4Four {
+            grid-column: 1/4;
+            grid-row: 3;
+            background: space url(/image/section4/image16.png);
+        }
+        .sect5Four {
+            grid-column: 4/9;
+            grid-row: 3;
+            background: space url(/image/section4/image17.png);
+        }
+        .sect6Four {
+            grid-column: 9/13;
+            grid-row: 3;
+            background: space url(/image/section4/image18.png);
+        }
+        .sect7Four {
+            grid-column: 10/13;
+            grid-row: 4;
+            background: space url(/image/section4/Frame11.png);
+            margin-left: 7%;
+            margin-bottom: 10%;
+            &:hover {
+                border: 0.1px solid gray;
+            }
+        }
+    }
+    .sectFive {
+        grid-area: sectFive;
+        @include grid($col);
+        grid-template-rows: 0.5fr 4fr 0.5fr 1fr;
+        .sect1Five {
+            grid-column: 1/7;
+            grid-row: 1;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 54px;
+            line-height: 54px;
+            color: #BDBDBD;
+            margin-bottom: 5%;
+        }
+        .sect2Five {
+            grid-column: 1/5;
+            grid-row: 2;
+            input {
+                width: 100%;
+                height: 40px;
+                margin-bottom: 8%;
+                background-color: #F3F3F3;
+                outline: none;
+                border: 0px;
+                padding-left: 3%;
+            }
+            textarea {
+                width: 100%;
+                height: 200px;
+                outline: none;
+                background-color: #F3F3F3;
+                border: 0px;
+                padding-left: 3%;
+                padding-top: 3%;
+            }
+        }
+        .sect3Five {
+            grid-column: 1/5;
+            grid-row: 3;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+            font-family: TT Hoves;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.03em;
+            color: #333333;
+        }
+        .sect4Five {
+            grid-column: 1/5;
+            grid-row: 4;
+            background: no-repeat url(/image/section5/Frame11.png);
+            &:hover {
+                border: 0.1px solid gray;
+            }
+            height: 71px;
+            width: 222px;
+        }
+        .map {
+            grid-column: 5/13;
+            grid-row: 2;
+        }
+    }
+    footer {
+        background-color: rgb(26, 8, 107);
+        grid-area: footer;
+        @include grid($col);
+        grid-column: 1/13;
+        margin-top: 10%;
+        margin-left: 0px;
+        margin-right: 0px;
+        background: space url(/image/footer/Rectangle11.png);
+        grid-template-rows: 1fr 4fr 1fr;
+        z-index: 1;
+        p {
+            grid-row: 3;
+            grid-column: 1/13;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 22px;
+            text-align: center;
+            color: rgba(200, 200, 200, 0.5);
+            border-top: 1px solid #ffffff4d;
+            padding-top: 1.2%;
+        }
+        .footer1 {
+            grid-row: 2;
+            grid-column: 2/4;
+            background: no-repeat url(/image/footer/Group11_1.png);
+        }
+        .footer2 {
+            grid-row: 2;
+            grid-column: 4/5;
+            p {
+                font-family: TT Hoves;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                border-top: 0px !important;
+            }
+            div {
+                height: 70%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
+                a {
+                    font-family: TT Hoves;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .footer3 {
+            grid-row: 2;
+            grid-column: 6/9;
+            p {
+                font-family: TT Hoves;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                border-top: 0px !important;
+            }
+            div {
+                height: 70%;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .footer3_1 {
+                    background: no-repeat url(/image/footer/Vector.png);
+                    height: 16px;
+                    padding-left: 5%;
+                    span {
+                        font-family: TT Hoves;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.03em;
+                        color: #FFFFFF;
+                    }
+                }
+                .footer3_2 {
+                    background: no-repeat url(/image/footer/Vector_1.png);
+                    height: 16px;
+                    padding-left: 10%;
+                    span {
+                        font-family: TT Hoves;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.03em;
+                        color: #FFFFFF;
+                    }
+                }
+                .footer3_3 {
+                    background: no-repeat url(/image/footer/Vector_2.png);
+                    height: 11px;
+                    padding-left: 10%;
+                    padding-top: -20%;
+                    span {
+                        font-family: TT Hoves;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 4px;
+                        letter-spacing: 0.03em;
+                        color: #FFFFFF;
+                        text-align: start;
+                    }
+                }
+            }
+        }
+        .footer4 {
+            grid-row: 2;
+            grid-column: 9/12;
+            p {
+                font-family: TT Hoves;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+                border-top: 0px !important;
+            }
+            .foot4 {
+                height: 70%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+            }
+            .sign1 {
+                background: space url(/image/footer/Shape.png);
+                width: 10px;
+                height: 19px;
+            }
+            .sign2 {
+                background: space url(/image/footer/Shape_1.png);
+                width: 21px;
+                height: 16px;
+            }
+            .sign3 {
+                background: space url(/image/footer/Shape_3.png);
+                width: 20px;
+                height: 18px;
+            }
+            .sign4 {
+                background: space url(/image/footer/Shape_2.png);
+                width: 14px;
+                height: 18px;
+            }
+        }
+    }
+}
