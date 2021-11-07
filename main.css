@@ -33,7 +33,7 @@
 }
 .grid header .navOne {
   grid-column: 1/2;
-  background: no-repeat center/100% url(/image/header/Group11.png);
+  background: no-repeat center/100% url(../image/header/Group11.png);
 }
 .grid header .navTwo {
   grid-column: 5/12;
