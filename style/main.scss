@@ -35,7 +35,7 @@ $col: 12;
         @include grid($col);
         .navOne {
             grid-column: 1/2;
-            background: no-repeat center/100% url(../image/header/Group11.png);
+            background: no-repeat center/100% url(./image/header/Group11.png);
         }
         .navTwo {
             grid-column: 5/12;
