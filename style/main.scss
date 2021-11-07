@@ -5,23 +5,23 @@ $col: 12;
 @import 'mixin';
 @font-face {
     font-family: 'TT Hoves';
-    src: url('/font/TTHoves-DemiBold.eot');
-    src: local('/font/TT Hoves DemiBold'), local('/font/TTHoves-DemiBold'), url('/font/TTHoves-DemiBold.eot?#iefix') format('embedded-opentype'), url('/font/TTHoves-DemiBold.woff2') format('woff2'), url('/font/TTHoves-DemiBold.woff') format('woff'), url('/font/TTHoves-DemiBold.ttf') format('truetype');
+    src: url('https://sergkredo.github.io/Figma_project_landingPage/font/TTHoves-DemiBold.eot');
+    src: local('https://sergkredo.github.io/Figma_project_landingPage/font/TT Hoves DemiBold'), local('https://sergkredo.github.io/Figma_project_landingPage/font/TTHoves-DemiBold'), url('https://sergkredo.github.io/Figma_project_landingPage/font/TTHoves-DemiBold.eot?#iefix') format('embedded-opentype'), url('https://sergkredo.github.io/Figma_project_landingPage/font/TTHoves-DemiBold.woff2') format('woff2'), url('https://sergkredo.github.io/Figma_project_landingPage/font/TTHoves-DemiBold.woff') format('woff'), url('https://sergkredo.github.io/Figma_project_landingPage/font/TTHoves-DemiBold.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('/font/SFPro/SFProDisplay-Heavy.eot');
-    src: local('/font/SFPro/SF Pro Display Heavy'), local('/font/SFPro/SFProDisplay-Heavy'), url('/font/SFPro/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'), url('/font/SFPro/SFProDisplay-Heavy.woff2') format('woff2'), url('/font/SFPro/SFProDisplay-Heavy.woff') format('woff'), url('/font/SFPro/SFProDisplay-Heavy.ttf') format('truetype');
+    src: url('https://sergkredo.github.io/Figma_project_landingPage/font/SFPro/SFProDisplay-Heavy.eot');
+    src: local('https://sergkredo.github.io/Figma_project_landingPage/font/SFPro/SF Pro Display Heavy'), local('https://sergkredo.github.io/Figma_project_landingPage/font/SFPro/SFProDisplay-Heavy'), url('https://sergkredo.github.io/Figma_project_landingPage/font/SFPro/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'), url('https://sergkredo.github.io/Figma_project_landingPage/font/SFPro/SFProDisplay-Heavy.woff2') format('woff2'), url('https://sergkredo.github.io/Figma_project_landingPage/font/SFPro/SFProDisplay-Heavy.woff') format('woff'), url('https://sergkredo.github.io/Figma_project_landingPage/font/SFPro/SFProDisplay-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: local('Open Sans Light'), local('OpenSans-Light'), url('opensanslight.woff2') format('woff2'), url('opensanslight.woff') format('woff'), url('opensanslight.ttf') format('truetype');
+    src: local('https://sergkredo.github.io/Figma_project_landingPage/Open Sans Light'), local('https://sergkredo.github.io/Figma_project_landingPage/OpenSans-Light'), url('https://sergkredo.github.io/Figma_project_landingPage/opensanslight.woff2') format('woff2'), url('https://sergkredo.github.io/Figma_project_landingPage/opensanslight.woff') format('woff'), url('https://sergkredo.github.io/Figma_project_landingPage/opensanslight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
