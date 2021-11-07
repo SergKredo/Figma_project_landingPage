@@ -35,7 +35,7 @@ $col: 12;
         @include grid($col);
         .navOne {
             grid-column: 1/2;
-            background: no-repeat center/100% url(./image/header/Group11.png);
+            background: no-repeat center/100% url(https://sergkredo.github.io/Figma_project_landingPage/image/header/Group11.png);
         }
         .navTwo {
             grid-column: 5/12;
@@ -100,7 +100,7 @@ $col: 12;
                 grid-row: 8/9;
                 grid-column: 1/2;
                 .span1SP3 {
-                    background: space url(/image/section1/Rectangle7.png);
+                    background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section1/Rectangle7.png);
                     width: 53px;
                     height: 53px;
                     display: inline-block;
@@ -109,7 +109,7 @@ $col: 12;
                     }
                 }
                 .span2SP3 {
-                    background: no-repeat center/100% url(/image/section1/Group10.png);
+                    background: no-repeat center/100% url(https://sergkredo.github.io/Figma_project_landingPage/image/section1/Group10.png);
                     width: 53px;
                     height: 53px;
                     margin-left: 10px;
@@ -122,7 +122,7 @@ $col: 12;
             .sectP4 {
                 grid-row: 9/10;
                 grid-column: 1/2;
-                background: no-repeat center/100% url(/image/section1/slide-numbers.png);
+                background: no-repeat center/100% url(https://sergkredo.github.io/Figma_project_landingPage/image/section1/slide-numbers.png);
                 width: 142px;
                 height: 31px;
                 align-self: end;
@@ -130,11 +130,11 @@ $col: 12;
         }
         .sectD1 {
             grid-column: 5/13;
-            background: space url(/image/section1/Rectangle6.png);
+            background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section1/Rectangle6.png);
             background-size: cover;
             .fractD {
                 position: relative;
-                background: space url(/image/section1/Frame10.png);
+                background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section1/Frame10.png);
                 top: -71+0.204*$height;
                 left: -1px;
                 width: 222px;
@@ -146,27 +146,27 @@ $col: 12;
         }
     }
     .sectTwo {
-        background: no-repeat center/100% url(/image/section2/Rectangle7.png);
+        background: no-repeat center/100% url(https://sergkredo.github.io/Figma_project_landingPage/image/section2/Rectangle7.png);
         grid-area: sectTwo;
         @include grid($col);
         grid-template-rows: repeat(10, 1fr);
         .sectTwoD1 {
             grid-column: 1/5;
             grid-row: 2/7;
-            background: space url(/image/section2/Rectangle8.png);
+            background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section2/Rectangle8.png);
             margin-left: 15%;
         }
         .sectTwoD2 {
             grid-column: 1/5;
             grid-row: 8/11;
-            background: space url(/image/section2/Rectangle10.png);
+            background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section2/Rectangle10.png);
             margin-left: 15%;
             margin-top: -10%;
         }
         .sectTwoD3 {
             grid-column: 4/8;
             grid-row: 2/12;
-            background: space url(/image/section2/Rectangle9.png);
+            background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section2/Rectangle9.png);
             margin-left: 25%;
             margin-top: 15%;
         }
@@ -187,7 +187,7 @@ $col: 12;
             .par3SectTwoD4 {
                 grid-column: 3/7;
                 grid-row: 8/9;
-                background: space url(/image/section2/Frame11.png);
+                background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section2/Frame11.png);
                 margin: 0px;
                 padding: 0px;
                 height: 71px;
@@ -277,7 +277,7 @@ $col: 12;
         .sect2Four {
             grid-column: 1/7;
             grid-row: 2;
-            background: space url(/image/section4/Rectangle17.png), space url(/image/section4/Rectangle12.png);
+            background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section4/Rectangle17.png), space url(https://sergkredo.github.io/Figma_project_landingPage/image/section4/Rectangle12.png);
             display: grid;
             span {
                 grid-column: 2/5;
@@ -297,7 +297,7 @@ $col: 12;
                 margin-left: 18%;
                 margin-right: 5%;
                 margin-top: -10%;
-                background: no-repeat url(/image/section4/Group12.png);
+                background: no-repeat url(https://sergkredo.github.io/Figma_project_landingPage/image/section4/Group12.png);
                 &:hover {
                     border: 0.1px solid gray;
                 }
@@ -308,27 +308,27 @@ $col: 12;
         .sect3Four {
             grid-column: 7/13;
             grid-row: 2;
-            background: space url(/image/section4/image15.png);
+            background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section4/image15.png);
         }
         .sect4Four {
             grid-column: 1/4;
             grid-row: 3;
-            background: space url(/image/section4/image16.png);
+            background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section4/image16.png);
         }
         .sect5Four {
             grid-column: 4/9;
             grid-row: 3;
-            background: space url(/image/section4/image17.png);
+            background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section4/image17.png);
         }
         .sect6Four {
             grid-column: 9/13;
             grid-row: 3;
-            background: space url(/image/section4/image18.png);
+            background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section4/image18.png);
         }
         .sect7Four {
             grid-column: 10/13;
             grid-row: 4;
-            background: space url(/image/section4/Frame11.png);
+            background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/section4/Frame11.png);
             margin-left: 7%;
             margin-bottom: 10%;
             &:hover {
@@ -390,7 +390,7 @@ $col: 12;
         .sect4Five {
             grid-column: 1/5;
             grid-row: 4;
-            background: no-repeat url(/image/section5/Frame11.png);
+            background: no-repeat url(https://sergkredo.github.io/Figma_project_landingPage/image/section5/Frame11.png);
             &:hover {
                 border: 0.1px solid gray;
             }
@@ -410,7 +410,7 @@ $col: 12;
         margin-top: 10%;
         margin-left: 0px;
         margin-right: 0px;
-        background: space url(/image/footer/Rectangle11.png);
+        background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/footer/Rectangle11.png);
         grid-template-rows: 1fr 4fr 1fr;
         z-index: 1;
         p {
@@ -429,7 +429,7 @@ $col: 12;
         .footer1 {
             grid-row: 2;
             grid-column: 2/4;
-            background: no-repeat url(/image/footer/Group11_1.png);
+            background: no-repeat url(https://sergkredo.github.io/Figma_project_landingPage/image/footer/Group11_1.png);
         }
         .footer2 {
             grid-row: 2;
@@ -482,7 +482,7 @@ $col: 12;
                 justify-content: flex-start;
                 align-items: flex-start;
                 .footer3_1 {
-                    background: no-repeat url(/image/footer/Vector.png);
+                    background: no-repeat url(https://sergkredo.github.io/Figma_project_landingPage/image/footer/Vector.png);
                     height: 16px;
                     padding-left: 5%;
                     span {
@@ -496,7 +496,7 @@ $col: 12;
                     }
                 }
                 .footer3_2 {
-                    background: no-repeat url(/image/footer/Vector_1.png);
+                    background: no-repeat url(https://sergkredo.github.io/Figma_project_landingPage/image/footer/Vector_1.png);
                     height: 16px;
                     padding-left: 10%;
                     span {
@@ -510,7 +510,7 @@ $col: 12;
                     }
                 }
                 .footer3_3 {
-                    background: no-repeat url(/image/footer/Vector_2.png);
+                    background: no-repeat url(https://sergkredo.github.io/Figma_project_landingPage/image/footer/Vector_2.png);
                     height: 11px;
                     padding-left: 10%;
                     padding-top: -20%;
@@ -546,22 +546,22 @@ $col: 12;
                 justify-content: space-evenly;
             }
             .sign1 {
-                background: space url(/image/footer/Shape.png);
+                background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/footer/Shape.png);
                 width: 10px;
                 height: 19px;
             }
             .sign2 {
-                background: space url(/image/footer/Shape_1.png);
+                background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/footer/Shape_1.png);
                 width: 21px;
                 height: 16px;
             }
             .sign3 {
-                background: space url(/image/footer/Shape_3.png);
+                background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/footer/Shape_3.png);
                 width: 20px;
                 height: 18px;
             }
             .sign4 {
-                background: space url(/image/footer/Shape_2.png);
+                background: space url(https://sergkredo.github.io/Figma_project_landingPage/image/footer/Shape_2.png);
                 width: 14px;
                 height: 18px;
             }
